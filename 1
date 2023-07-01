@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <windows.h>
+#include <stdlib.h>
+
+int main()
+{
+    float t1, t2, t3, time;
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
+    printf("Введіть час, за який з'їдає пиріг перший гість\n");
+    scanf("%f", &t1);
+    printf("Введіть час, за який з'їдає пиріг другий гість\n");
+    scanf("%f", &t2);
+    printf("Введіть час, за який з'їдає пиріг третій гість\n");
+    scanf("%f", &t3);
+    printf("Час за який гості з'їдять пиріг:\n");
+    time=(t1+t2+t3)/3;
+    printf("%.2f",time);
+    return 0;
+}
